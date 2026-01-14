@@ -1,0 +1,33 @@
+/* BOUTON MODE SOMBRE SOBRE */
+.theme-toggle {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+#toggle-theme {
+  background: #eaeaea;
+  color: #444;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#toggle-theme:hover {
+  background: #dcdcdc;
+}
+
+/* Mode sombre cohérent avec ton design */
+body.dark-mode {
+  --background: #0f172a;
+  --card-bg: #020617;
+  --text: #e5e7eb;
+}
+
+body.dark-mode #toggle-theme {
+  background: #1e293b;
+  color: #e5e7eb;
+}
